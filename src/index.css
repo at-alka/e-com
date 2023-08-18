@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Playfair Display;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+h1,h2,h3,h4,h5,h6,a,ul,li,div,small,span{
+  font-family: Playfair Display;
+}
+
+.menu-sidebaar .modal-dialog {
+  max-width: 289px;
+  margin: 0px;
+  left: 0;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+.menu-sidebaar .modal-content{
+height: 100vh;
+border-radius: 0px;
+border: 0px;
+}
+
+.menu-sidebaar.fade .modal-dialog {
+  left: 0;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+          transition: opacity 0.3s linear, left 0.3s ease-out;
+}

@@ -1,0 +1,240 @@
+.banner-sec img{
+    width: 100%;
+    padding-top: 110px;
+    /* height: 632px;
+    object-fit: cover; */
+}
+.clothes-sec {
+    padding: 50px 0px;
+}
+.clothes-sec img{
+ border-radius: 50%;
+}
+.clothes-sec{
+    text-align: center;
+}
+.clothes-sec h6{
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 0px;
+}
+.trendy-clothes img{
+width: 100%;
+margin: 10px 0px;
+}
+.trend-card{
+    position: relative;
+    margin-bottom: 50px;
+}
+.trend-card h6{
+    font-family: Montserrat;
+font-size: 14px;
+text-align: center;
+font-weight: 400;
+color: #1C1C1C;
+max-width: 170px;
+    text-align: center;
+    margin: 0 auto;
+    /* padding-top: 12px; */
+    padding: 12px 0px 8px 0px;
+}
+.trend-card p{
+    color: #1F1F1F;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+}
+.trend-card img{
+    width: 100%;
+}
+.trend-card span{
+    color: #F00;
+font-family: Montserrat;
+font-size: 10px;
+font-weight: 400;
+text-decoration: line-through;
+}
+/* .trendSection{
+    z-index: 0;
+} */
+.size-box {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 23px;
+}
+.size-box li{
+    border: 1px solid #E6E6E6;
+    font-family: Montserrat;
+font-size: 14px;
+color: #1C1C1C;
+font-weight: 500;
+max-width: 40px;
+min-width: 40px;
+height: 40px;
+text-align: center;
+padding-top: 9px;
+}
+.image-hover{
+    min-height: 476px;
+    cursor: pointer;
+}
+
+/* .image-hover:hover + .hover-bg {
+    opacity: 1;
+    visibility: visible;
+} */
+
+.hover-bg{
+    background: rgba(31, 31, 31, 0.30);
+backdrop-filter: blur(5px);
+display: flex;
+position: absolute;
+top: 0px;
+width: 100%;
+justify-content: center;
+max-height: 476px;
+min-height: 476px;
+transition: opacity 0.5s linear 0s;
+overflow: hidden;
+-webkit-transform: scale(0);
+-ms-transform: scale(0);
+-webkit-transition: .3s ease;
+transition: .3s ease;
+
+}
+.image-hover:hover .hover-bg{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.hover-bg img{
+    width: 54px !important;
+    margin-right: 10px;
+}
+.headings{
+    text-align: center;
+    padding: 40px 0px;
+}
+.headings h2{
+    padding-bottom: 40px;
+    max-width: 387px;
+    min-width: 387px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #fff;
+}
+.view-but{
+    background: #770015;
+    border: 0px;
+    color: #fff;
+    max-width: 170px;
+    min-width: 170px;
+    height: 48px;
+    color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+text-transform: uppercase;
+display: inline-block;
+text-decoration: none;
+padding-top: 12px;
+
+}
+.view-but:hover{
+    color: #fff;
+}
+.custom-border{
+    border-bottom: 1px solid #FFC7D1;
+    position: relative;
+    top: 23px
+}
+.fashion-banner{
+    padding: 50px 0px;
+}
+.fashion-banner img{width: 100%;}
+.streetIm img{
+    width: 100%;
+}
+.streetIm{
+    position: relative;
+    margin-bottom: 25px;
+}
+.streetIm h3{
+    color: #FFF;
+font-family: Playfair Display;
+font-size: 20px;
+font-weight: 600;
+    background: linear-gradient(137deg, rgba(255, 255, 255, 0.40) 0.55%, rgba(255, 255, 255, 0.01) 100%);
+backdrop-filter: blur(32px);
+height: 68.234px;
+position: absolute;
+bottom: 0px;
+width: 100%;
+margin-bottom: 0px;
+    text-align: center;
+    padding-top: 19px
+}
+.hurryUp{
+    padding: 70px 0px;
+}
+.hurryCard{
+    background: #CCCEA7;
+    text-align: center;
+    height: 653px;
+    padding: 50px 0px;
+}
+.hurryCard h5{
+    color: #1C1C1C;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 22px 0px;
+}
+.hurryCard h1{
+    text-align: center;
+font-family: Playfair Display;
+font-size: 84px;
+font-weight: 600;
+}
+.hurryCard button{
+    border: 1px solid #FFF;
+    width: 170px;
+    height: 48px;
+    color: #FFF;
+font-family: Montserrat;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+text-transform: uppercase;
+background-color: transparent;
+}
+.hurryCard-two {
+    background: #D6BEBE;
+}
+.paymentMode{
+    background: #F5F4F2;
+    text-align: center;
+    padding: 35px 0px;
+    position: relative;
+}
+.border-right{
+    border-right: 1px solid #FFC7D1;
+}
+.leftIm{
+    position: absolute;
+    right: 0;
+    top: -5rem;
+    width: 80px
+    
+}
+.rightIm{
+    position: absolute;
+    left: 0;
+    bottom: -5rem;
+    width: 80px
+}
+.subscForm{
+    background: linear-gradient(136deg, #AB001E 0%, #770015 100%);
+}
