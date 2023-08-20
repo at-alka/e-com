@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import DefaultModal from '../DefaultModal/DefaultModal';
+import Searchbar from '../Searchbar/Searchbar'
+import List from "../Searchbar/List";
 function Header() {
 
+  const [value, setValue] = useState("");
   const [show, setShow] = useState(false);
 
   return (
@@ -38,6 +41,24 @@ function Header() {
       >
         <div onClick={() => setShow(false)}>
         <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <></>
+        <div style={{ border:"1px solid rgb(139, 139, 163)",backgroundColor:"#F5F5F5"}}>
+        <Searchbar
+            value={value}
+            setValue={(e) => setValue(e.target.value)}
+            placeholder="Search"
+            fontSize="12px"
+            backgroundColor="#F5F5F5"
+            borderRadius="4px"
+            searchIcon
+            width="205px"
+            height="40px"
+            position="relative"
+            padding="0px 20px"
+
+          />
+          <List input={value} />
         </div>
       </DefaultModal>
     </div>

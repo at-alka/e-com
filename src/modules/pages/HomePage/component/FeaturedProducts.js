@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { featuredData } from '../../../../constants/HomeData'
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 function FeaturedProducts() {
     const [isShown, setIsShown] = useState(false);
   return (
@@ -10,12 +12,17 @@ function FeaturedProducts() {
             { featuredData && featuredData.map((item,index) => (
                 <div className='col-lg-3 col-md-6 col-12'>
                 <div className='trend-card'>
+                <Link to={`/product-page/featuredData/${index}`}>
                     <div>
                       <div className='image-hover' 
                        onMouseEnter={() => setIsShown(true)}
                        onMouseLeave={() => setIsShown(false)}
                       >
-                        <img src={item.image} />
+                        <LazyLoadImage src={item.image}
+                            PlaceholderSrc={item.img}
+                            effect="blur"
+                            alt="Image Alt"
+                        />
                         {isShown && ( 
                         <div className='hover-bg'>
                          <img src="images/bag-icn.svg"/>
@@ -26,6 +33,7 @@ function FeaturedProducts() {
                     </div>
             
                     </div>
+                    </Link>
                     <h6>{item.name}</h6>
                     <div className='d-flex justify-content-center align-items-baseline'><p>{item.price}</p><span>{item.realPrice}</span></div>
                     <ul className='size-box'>

@@ -33,48 +33,56 @@ export const clothesData = [
 export const trendData = [
     {
         "image":"../../images/Rect1.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
     },
     {
         "image":"../../images/Rect2.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
     },
     {
         "image":"../../images/Rect3.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
     },
     {
         "image":"../../images/Rect4.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
     },
     {
         "image":"../../images/Rect1.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
     },
     {
         "image":"../../images/Rect2.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
     },
     {
         "image":"../../images/Rect3.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
     },
     {
         "image":"../../images/Rect4.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
@@ -83,24 +91,28 @@ export const trendData = [
 export const featuredData = [
     {
         "image":"../../images/Rect1.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
     },
     {
         "image":"../../images/Rect2.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
     },
     {
         "image":"../../images/Rect3.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"
     },
     {
         "image":"../../images/Rect4.svg",
+        "img":"../../images/rect1.jpeg",
         "name":"Men Henley Neck Full Sleeve Red Wine",
         "price":"₹399",
         "realPrice":"₹1299"

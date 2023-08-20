@@ -7,6 +7,7 @@ import FeaturedProducts from './component/FeaturedProducts'
 import StreetwearCard from './component/StreetwearCard'
 import HurryUpCard from './component/HurryUpCard'
 import PaymentSection from './component/PaymentSection'
+import SubscribeForm from './component/SubscribeForm'
 
 
 function HomePage() {
@@ -79,7 +80,7 @@ function HomePage() {
       <HurryUpCard />
       {/* end */}
       <PaymentSection/>
-
+      <SubscribeForm />
     </div>
   )
 }

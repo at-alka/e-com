@@ -76,7 +76,7 @@ text-align: center;
 padding-top: 9px;
 }
 .image-hover{
-    min-height: 476px;
+    
     cursor: pointer;
 }
 
@@ -93,8 +93,8 @@ position: absolute;
 top: 0px;
 width: 100%;
 justify-content: center;
-max-height: 476px;
-min-height: 476px;
+max-height: 466px;
+min-height: 466px;
 transition: opacity 0.5s linear 0s;
 overflow: hidden;
 -webkit-transform: scale(0);
@@ -237,4 +237,154 @@ background-color: transparent;
 }
 .subscForm{
     background: linear-gradient(136deg, #AB001E 0%, #770015 100%);
+    text-align: center;
+    position: relative;
+    min-height: 312px;
+    padding: 80px;
+    margin: 80px 0px;
+}
+.left-vc {
+    position: absolute;
+    left: 0px;
+}
+.right-vc {
+    position: absolute;
+    right: 0px;
+}
+.subscForm h1{
+    color: #FFF;
+text-align: center;
+font-family: Playfair Display;
+font-size: 36px;
+font-weight: 600;
+padding: 10px 0px;
+}
+.subsc-input{
+    display: flex;
+    justify-content: center;
+}
+.input-box{
+    background: rgba(255, 255, 255, 0.32);
+    height: 68px;
+    border: 0px;
+    width: 100%;
+    width: 50%;
+    padding: 10px;
+}
+.subsc-input button{
+    width: 142.5px;
+height: 68px;
+background-color: #fff;
+color: #770015;
+text-align: center;
+font-family: Playfair Display;
+font-size: 22px;
+font-weight: 600;
+border: 0px;
+
+}
+
+.subsc-input ::placeholder {
+    color: #fff;
+}
+.subsc-input input[type="text"] {
+    color: #fff; 
+}
+.productP{
+    padding: 40px;
+}
+.productP h6{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    color: #1C1C1C;
+    font-family: Montserrat;
+    max-width: 350px;
+}
+.product-card{
+
+}
+
+.product-card p{
+    color: #1F1F1F;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+}
+
+.product-card span{
+    color: #F00;
+font-family: Montserrat;
+font-size: 10px;
+font-weight: 400;
+text-decoration: line-through;
+}
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+    filter: blur(0);
+    transition: filter .3s;
+    width: 100%;
+}
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+@media only screen and (max-width : 767px) {
+    .headings h2{
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .hurryCard {
+        height: 370px;
+        padding: 19px 0px;
+        margin-bottom: 13px;
+    }
+    .hurryCard img{
+        width: 100px;
+    }
+    .hurryCard h5{
+        font-size: 22px;
+        padding: 10px 0px;
+    }
+    .hurryCard h1{
+        font-size: 36px;
+    }
+    .payment-mobile img{
+        width: 60px;
+        height: 60px;
+    }
+    .subscForm h1{
+        font-size: 16px;
+    }
+    .subscForm{
+        padding: 56px 16px;
+        min-height:227px;
+    }
+    .input-box{
+        height: 50px;
+        font-size: 13px;
+    }
+    .subsc-input button {
+        width: 84.5px;
+    height: 50px;
+    font-size: 14px;
+    }
+    .border-right{
+        border-right: 0px solid #FFC7D1;
+    }
+}
+@media (min-width : 767px) and (max-width : 1024px) {
+    .hurryCard {
+        height: 370px;
+        padding: 19px 0px;
+        margin-bottom: 13px;
+    }
+    .hurryCard img{
+        width: 100px;
+    }
+    .hurryCard h5{
+        font-size: 22px;
+        padding: 10px 0px;
+    }
+    .hurryCard h1{
+        font-size: 46px;
+    }
 }
