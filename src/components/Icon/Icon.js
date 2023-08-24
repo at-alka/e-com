@@ -11,6 +11,7 @@ import { ReactComponent as QuestionMark } from "./question-mark.svg";
 import { ReactComponent as Search } from "./search.svg";
 import { ReactComponent as CloseIcon } from "./close.svg";
 import { ReactComponent as Theme } from "./theme.svg";
+import { ReactComponent as FilledClose } from "./filledClose.svg";
 
 
 // Always keep this list alphabetically sorted
@@ -18,6 +19,7 @@ export const iconMap = {
   theme: Theme,
   close: CloseIcon,  
   search: Search,
+  filledClose: FilledClose,
 
 };
 

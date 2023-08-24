@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "list": [
+    {
+      "name": "alka",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Gitesh Kumar",
+      "email": "gitesh@motorola.biz",
+      "dob": "2000-10-10",
+      "country": "US",
+      "avatar": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+    },
+    {
+      "name": "alka",
+      "email": "abc",
+      "dob": "2023-09-08",
+      "country_code": "",
+      "profile_pic": "",
+      "id": 13
+    },
+    {
+      "name": "alka",
+      "email": "abc@gmail.com",
+      "dob": "2023-08-01",
+      "country_code": "Antarctica",
+      "profile_pic": "",
+      "id": 14
+    },
+    {
+      "name": "jccjnjd",
+      "email": "mndcbdj",
+      "dob": "2023-08-08",
+      "country_code": "South Georgia and the South Sandwich Islands",
+      "profile_pic": "",
+      "id": 15
+    },
+    {
+      "name": "alka",
+      "email": "abc@gmail.com",
+      "dob": "2023-08-14",
+      "country_code": "Bouvet Island",
+      "profile_pic": "",
+      "id": 16
+    }
+  ]
+}

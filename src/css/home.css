@@ -327,6 +327,55 @@ text-decoration: line-through;
 :focus-visible {
     outline: -webkit-focus-ring-color auto 0px;
 }
+.add-form{
+    background-color: #f7f7ff;
+    padding: 147px 0px;
+
+}
+.bg-color{
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0px 4px 8px 0px rgba(96, 97, 112, 0.16), 0px 0px 2px 0px rgba(40, 41, 61, 0.04);
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+.profile img{
+    width: 100px;
+}
+.input-box{
+    width: 100%;
+    border: none;
+    border-left: none !important;
+    outline: none;
+    font-size: 14px;
+    padding: 10px 10px 10px 12px;
+    text-align: start;
+    display: block;
+    box-shadow: 0px 2px 6px #13124212;
+    border: 1px solid #EFF0F7;
+    border-radius: 8px;
+}
+.add-form button{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+.profile{
+    position: relative;
+    width: 30%;
+}
+.profile i{
+    position: absolute;
+    bottom: 4px;
+    right: 45px;
+    font-size: 30px;
+    color: gray;
+}
+.add-form span{
+    color: red;
+    font-size: 12px;
+    font-family: Montserrat;
+}
 @media only screen and (max-width : 767px) {
     .headings h2{
         max-width: 100%;
