@@ -4,7 +4,9 @@ import { ThemeProvider } from "styled-components";
 import theme from "./theme";
 import "./css/header.css";
 import "./css/home.css";
+import "react-toastify/dist/ReactToastify.css";
 
+import { ToastContainer } from "react-toastify";
 import Profile from './modules/pages/Profile/Profile';
 import AddProfile from './modules/pages/AddProfile/AddProfile';
 import EditProfile from './modules/pages/EditProfile/EditProfile';
@@ -21,6 +23,7 @@ function App() {
     </Routes>
     {/* <Footer /> */}
     </ThemeProvider>
+      <ToastContainer />
     </BrowserRouter>
   );
 }

@@ -19,8 +19,6 @@ function Profile() {
       });
   }, []);
 
-  console.log(persons,"data comming")
-
   return (
     <div className='profile-sec'>
       <div className='container'>
@@ -35,20 +33,7 @@ function Profile() {
                 <div className='row'>
 
                   {Boolean(persons?.length) ? persons.map(profile => (
-                    <div key={profile.id}>
-                      {/* <PCard
-                        avatar={profile.avatar}
-                        name={profile.name}
-                        email={profile.email}
-                        dob={profile.dob}
-                        country={profile.country}
-                        persons={persons} 
-                      />
-                     */}
-                      {console.log(profile,"alka")} 
-                     <PCard {...{...profile}} />
-                     
-                     </div>
+                      <PCard key={profile?.id} {...{...profile}} />
 
                   )) : "there is no data"}
                 </div>

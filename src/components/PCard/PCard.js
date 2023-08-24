@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 function PCard({ avatar, name, email, dob, country, id }) {
-  console.log(name, id)
   return (
     <div className='col-lg-4'>
       <div className='Card-box'>
@@ -16,7 +15,6 @@ function PCard({ avatar, name, email, dob, country, id }) {
         </div>
       </div>
     </div>
-
   );
 }
 

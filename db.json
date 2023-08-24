@@ -9,15 +9,18 @@
   "list": [
     {
       "name": "alka",
-      "id": 1
+      "id": 1,
+      "email": "alka@gmail.com",
+      "country": "Antarctica",
+      "dob": "2023-08-09"
     },
     {
       "id": 2,
       "name": "Gitesh Kumar",
       "email": "gitesh@motorola.biz",
       "dob": "2000-10-10",
-      "country": "US",
-      "avatar": "https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
+      "country": "Antarctica",
+      "avatar": "C:\\fakepath\\unnamed.png"
     },
     {
       "name": "alka",

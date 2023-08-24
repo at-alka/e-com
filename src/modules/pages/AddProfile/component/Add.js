@@ -3,8 +3,10 @@ import Input from '../../../../components/Input/Input'
 import Breadcrumbs from '../../../../components/Breadcrumbs'
 import Box from "../../../../components/Box";
 import UploadFile from "../../../../components/UplodeFile/UploadFile";
-import { useLocation } from 'react-router-dom';
-function Add() {
+import { useLocation, useParams, useSearchParams } from "react-router-dom";
+import { showNotification } from "../../../../util/utility";
+
+const Add = () => {
   const initialValues = {
     name:"",
     email: "",
@@ -24,13 +26,26 @@ function Add() {
 
   let dataList = [
     { label: "Profle", link: `/`, isBold: true, color: "#222" },
-    { label: `add`, link: "/add", isBold: true, color: "#7E7E7E" },
+    { label: `${id ? "edit" : "add"}`, link: "", isBold: true, color: "#7E7E7E" },
   ];
   const handleChange = (keyName, keyValue) => {
     let data = { ...formValues }
     data[keyName] = keyValue
     setFormValue(data);
   }
+
+  useEffect(() => {
+    if (id) {
+      fetch(`http://localhost:3004/list/${id}`)
+      .then(response => response.json())
+      .then(data => {
+        setFormValue(data)
+      })
+      .catch(error => {
+        console.log('err', error);
+      });
+    }
+  }, [id]);
 
   const handleSubmit = (e) => {
     if (formValues.id){
@@ -40,7 +55,10 @@ function Add() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(formValues)
-    }).then(response => console.log(response.json()))
+    }).then(response => {
+        showNotification('success',  "Edit Successfully.")
+        console.log(response.json());
+      })
     }
     else {
     let check = validate(formValues);
@@ -111,7 +129,7 @@ function Add() {
       console.error("Error:", error)
     })
    }
- 
+
 
   return (
     <div className='add-form'>
@@ -124,15 +142,15 @@ function Add() {
         <div className="col-lg-8 mx-auto bg-color">
           <div className="profile" onSubmit={handleUpload}>
           <img src="images/Profile-Avatar.png"/>
-            <input type="file" name="file" 
+            <input type="file" name="file"
             // onChange={handleFile}
             fileName={formValues?.avatar}
-            onChange={(e) => handleChange("avatar", e.target.value)} 
+            onChange={(e) => handleChange("avatar", e.target.value)}
             />
-            
+
             {/* <UploadFile
                 id="person"
-                onChange={(e) => handleChange("avatar", e.target.value)} 
+                onChange={(e) => handleChange("avatar", e.target.value)}
                 fileName={formValues?.avatar}
                 bg="#fff"
                 height="66px"
